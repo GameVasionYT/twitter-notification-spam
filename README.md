@@ -2,4 +2,5 @@
 
 ## REQUIREMENTS
 A twitter developer account
-You can get one (here)[developer.twitter.com]
+You can register [here](developer.twitter.com)
+Tweepy `pip install tweepy`
