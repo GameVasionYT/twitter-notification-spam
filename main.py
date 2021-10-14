@@ -10,9 +10,11 @@ sentences = ('you\'re a nerd', 'You\'re a nerd', 'I don\'t know if I said this a
 sentence = random.choice(sentences)
 
 
-auth = tweepy.OAuthHandler(os.environ['CONSUMER_KEY'], os.environ['CONSUMER_SECRET'])
-auth.set_access_token(os.environ['ACCESS_TOKEN'],os.environ['ACCESS_TOKEN_SECRET'])
-toReply = "AntiCaughtIn4K" #user to get most recent tweet
+auth = tweepy.OAuthHandler("CONSUMER_KEY", 
+    "CONSUMER_SECRET_KEY")
+auth.set_access_token("ACCESS_TOKEN", 
+    "ACCESS_TOKEN_SECRET")
+toReply = "USERNAME" #user to get most recent tweet
 api = tweepy.API(auth)
 
 
